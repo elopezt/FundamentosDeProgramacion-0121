@@ -25,35 +25,36 @@ int main()
 
     cin >> opc;
 
-    if (opc==1){
+    switch (opc)
+    {
+    case 1:
         cout<<"ingrese el valor del radio: ";
         cin>>radio;
-
         cout<<"el radio es: "<<3.1416*pow(radio,2)<<endl;
-    }
+        break;
 
-    else if(opc==2){
+    case 2:
         cout<<"ingrese la base: ";cin>>baseC;
         cout<<"Ingrese la altura: ";cin>>alturaC;
-
         cout<<"El area es: "<<baseC*alturaC<<endl;
-        
-    }
+        break;
 
-    else if(opc==3){
+    case 3:
         cout<<"ingrese la base: ";cin>>baseR;
         cout<<"Ingrese la altura: ";cin>>alturaR;
 
         cout<<"El area es: "<<baseR*alturaR<<endl;
-    }
+        break;
 
-    else if(opc==4){
+    case 4:
         cout<<"ingrese la base: ";cin>>baseT;
         cout<<"Ingrese la altura: ";cin>>alturaT;
-
         cout<<"El area es: "<<(baseT*alturaT)/2<<endl;
-    }
+        break;
     
-    else
-    cout<<"opcion no valida ";
+    default:
+        cout<<"opcion no valida ";
+        break;
+    }
+return 0;
 }
