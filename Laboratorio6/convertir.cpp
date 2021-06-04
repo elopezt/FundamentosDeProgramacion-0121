@@ -1,6 +1,6 @@
 /* 11) Solicite un carácter desde teclado. Si es una letra minúscula, despliegue la
 mayúscula correspondiente. Si es una letra mayúscula, despliegue la minúscula
-correspondiente. Puede valerse de la tabla ASCII para resolver este problema.*/
+correspondiente. Puede valerse de la tabla ASCII para resolver este problema.
 
 #include <iostream>
 #include <ctype.h>
@@ -22,11 +22,11 @@ int main()
     {
         cout << "Su letra en minuscula es: " << (letra += 32); //el 32 se suma hacia el codigo de la letra en minuscula
     }
-}
+}*/
 
 /*Solicite un carácter desde teclado. Si es una letra minúscula, despliegue la
 mayúscula correspondiente. Si es una letra mayúscula, despliegue la minúscula
-correspondiente. Puede valerse de la tabla ASCII para resolver este problema.
+correspondiente. Puede valerse de la tabla ASCII para resolver este problema.*/
 
 #include <iostream>
 
@@ -39,19 +39,19 @@ char caracter;
 cout<<"Digite un caracter"<<endl;
 cin>>caracter;
 
+//A
 if (caracter>='A'&& caracter<='Z')
-{
+{     //A   + 32         
     caracter -= 'A' - 'a';
     cout<< caracter;
 }
 
 else if(caracter>='a'&& caracter<='z')
-{
+{    //a    -     32
     caracter -= 'a' - 'A';
     cout<< caracter;
 
 }
 
-
     return 0;
-}*/
+}
