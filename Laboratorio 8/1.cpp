@@ -25,6 +25,7 @@ int main(){
         cout<<"4)Promedio de elementos del arreglo "<<endl;
         cout<<"5)sustituir elementos del arrego "<<endl;
         cout<<"6)Imprimir arreglo "<<endl;
+        
         cin>>opcion;
 
         switch(opcion){
